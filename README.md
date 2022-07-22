@@ -1,4 +1,4 @@
-# Frontend
+# romanToInt App
 Upskilling on frontend development (namely VueJS) utilising a previously made [containerised API](https://github.com/helenijevans/romanNum-ArabicInt) that converts roman numerals to integers and vice versa.
 ___
 ## Project setup
