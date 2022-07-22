@@ -24,6 +24,7 @@ npm run lint
 ___
 ## Current State of Project
 ![Shows image converting roman numeral to integer](./src/assets/frontend_currentProgress2.png)
+
 ![Shows image converting integer to roman numeral](./src/assets/frontend_currentProgress1.png)
 
 
