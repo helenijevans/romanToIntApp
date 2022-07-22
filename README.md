@@ -29,7 +29,7 @@ ___
 
 
 ## To-do List
-
-- [ ] Test
-- [x] Test
-- [x] Test
+- [ ] Feedback from CC
+- [ ] Make sure box clears after switching between modes
+- [x] Logo :D
+- [x] Get base functionality working
