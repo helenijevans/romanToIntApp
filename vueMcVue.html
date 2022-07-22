@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Always specify the envoding for a HTML or XLML page otherwise risks that characters may be incorrectly interpreted -->
+        <!-- Not just an issue of human readability, machines need to understand data too -->
+        <meta charset="UTF-8"> 
+        <title>Shopping List App</title>
+    </head>
+    <body>
+        <div id="shopping-list">
+            <h1>Shopping List App</h1>
+            <input v-model="newItem" type="text" placeholder="Add an item">
+            <button class="btn btn-primary" v-on:click="getPrice">Save Item</button>
+            <h2>{{result}}</h2>
+            <h2>{{info}}</h2>
+        </div>
+        <script src="https://unpkg.com/vue@2"></script>
+        <script>
+            import axios from 'axios'
+
+            var shoppingList = new Vue({
+                el: '#shopping-list' ,
+                // what does that mean ^
+                data: {
+                    header: 'Vue is ready to party!',
+                    newItem: '',
+                    result: 'XII',
+                    info: '',
+                },
+                methods: {
+                    async getPrice(){
+                        const response = await axios
+                        .get(`http://127.0.0.1:5000/romanToInt/${this.newItem}`)
+                        console.log(response)
+                    }
+                }
+                                
+            })
+        </script>
+    </body>
+</html>
