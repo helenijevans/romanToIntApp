@@ -1,6 +1,6 @@
 <template>
-  <div class="hello">
-    <div id="shopping-list">
+  <div class>
+    <div id="convert-item">
       <h1>Roman Numerals ↔️ Integers</h1>
       <input type="radio" id="one" value="romanToInt" v-model="route" />
       <label for="one">Numerals to Integer</label>
@@ -25,12 +25,11 @@
 import axios from 'axios'
 
 export default {
-  name: 'shopping-list',
+  name: 'convert-item',
   data: () => ({
     searchTerm: '',
     result: '',
     route: "romanToInt",
-    // toggle: this.route == "romanToInt",
   }),
   methods: {
     async convert() {
