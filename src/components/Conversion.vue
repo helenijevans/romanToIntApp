@@ -2,10 +2,10 @@
   <div class>
     <div id="convert-item">
       <h1>Roman Numerals ↔️ Integers</h1>
-      <input type="radio" id="one" value="romanToInt" v-model="route" />
+      <input type="radio" id="one" value="romanToInt" v-model="route" v-on:click="clearInputField" />
       <label for="one">Numerals to Integer</label>
 
-      <input type="radio" id="two" value="intToRoman" v-model="route"/>
+      <input type="radio" id="two" value="intToRoman" v-model="route" v-on:click="clearInputField"/>
       <label for="two">Integer to Numerals</label>
         <div v-if="this.route=='romanToInt'">
         <input v-model="searchTerm" type="text" placeholder="Enter a numeral" />
@@ -36,6 +36,11 @@ export default {
       const response = await axios.get(`http://127.0.0.1:5000/${this.route}/${this.searchTerm}`)
       console.log(response)
       this.result = response.data
+    },
+    clearInputField() {
+      if (this.searchTerm.length != 0){
+        this.searchTerm = ""
+      }
     }
   }
 }

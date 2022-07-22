@@ -30,6 +30,10 @@ ___
 
 ## To-do List
 - [ ] Feedback from CC
-- [ ] Make sure box clears after switching between modes
+- [ ] Adapt FE to show errors
+- [ ] Adapt API to return errors
+- [ ] Figure out what is happening with numbers >= 4000 (API throws an error)
+- [ ] Figure out if there's a limitation on Rom -> Int Inputs (limitation found on the vice versa)
+- [x] Make sure box clears after switching between modes
 - [x] Logo :D
 - [x] Get base functionality working
