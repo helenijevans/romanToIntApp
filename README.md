@@ -36,7 +36,7 @@ ___
 - [x] Adapt API to fix
 - Added a check for if the number is greater than the maximum number in the dictionary, allowing for quick multiples to be dealt with before using the rest of the comparative logic
 - [x] Figure out what is happening with numbers >= 4000 (API throws an error)
-- 4000 was the first number where logic broke, this is because the program thinks (based on the sequence logic) that there is a numeral for 5000, and hence 4000 would be similar in nature to 4, 40 etc. (IV, IL)
+- 4000 was the first number where logic broke, this is because the program thinks (based on the sequence logic) that there is a numeral for 5000, and hence 4000 would be similar in nature to 4, 40 (IV, IL etc.)
 - [x] Figure out if there's a limitation on Rom -> Int Inputs (limitation found on the vice versa)
 - No there isn't a limitation
 - [x] Make sure box clears after switching between modes
