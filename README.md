@@ -27,7 +27,7 @@ ___
 
 ![Shows image converting integer to roman numeral](./src/assets/frontend_currentProgress1.png)
 
-![Shows error handling](./src/assets/error_handling.png)
+![Shows error handling](./src/assets/error-handling.png)
 
 
 ## To-do List
