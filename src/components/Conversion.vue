@@ -33,9 +33,13 @@ export default {
   }),
   methods: {
     async convert() {
-      const response = await axios.get(`http://127.0.0.1:5000/${this.route}/${this.searchTerm}`)
-      console.log(response)
-      this.result = response.data
+      try{
+        const response = await axios.get(`http://127.0.0.1:5000/${this.route}/${this.searchTerm}`)
+        console.log(response)
+        this.result = response.data
+      } catch {
+        this.result = "An error has occurred. Please try again later."
+      }
     },
     clearInputField() {
       if (this.searchTerm.length != 0){
