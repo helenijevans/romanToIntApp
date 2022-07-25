@@ -27,10 +27,12 @@ ___
 
 ![Shows image converting integer to roman numeral](./src/assets/frontend_currentProgress1.png)
 
+![Shows error handling](./src/assets/error_handling.png)
+
 
 ## To-do List
 - [ ] Feedback from CC
-- [ ] Adapt FE to show errors
+- [x] Adapt FE to show errors
 - [x] Adapt API to fix
 - Added a check for if the number is greater than the maximum number in the dictionary, allowing for quick multiples to be dealt with before using the rest of the comparative logic
 - [x] Figure out what is happening with numbers >= 4000 (API throws an error)
