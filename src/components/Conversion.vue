@@ -5,19 +5,16 @@
       <input type="radio" id="one" value="romanToInt" v-model="route" v-on:click="clearInputField" />
       <label for="one">Numerals to Integer</label>
 
-      <input type="radio" id="two" value="intToRoman" v-model="route" v-on:click="clearInputField"/>
+      <input type="radio" id="two" value="intToRoman" v-model="route" v-on:click="clearInputField" />
       <label for="two">Integer to Numerals</label>
-        <div v-if="this.route=='romanToInt'">
-        <input v-model="searchTerm" type="text" placeholder="Enter a numeral" />
+      <div>
+        <input v-model="searchTerm" type="text"
+          :placeholder="this.route === 'romanToInt' ? 'Enter a numeral' : 'Enter an integer'" />
         <button class="btn btn-primary" v-on:click="convert"> Convert me</button>
         <h2>{{ result }}</h2>
-        </div>
-        <div v-else>
-        <input v-model="searchTerm" type="text" placeholder="Enter an integer" />
-        <button class="btn btn-primary" v-on:click="convert"> Convert me</button>
-        <h2>{{ result }}</h2>
-        </div>
+
       </div>
+    </div>
   </div>
 </template>
 
@@ -33,7 +30,7 @@ export default {
   }),
   methods: {
     async convert() {
-      try{
+      try {
         const response = await axios.get(`http://127.0.0.1:5000/${this.route}/${this.searchTerm}`)
         console.log(response)
         this.result = response.data
@@ -42,7 +39,7 @@ export default {
       }
     },
     clearInputField() {
-      if (this.searchTerm.length != 0){
+      if (this.searchTerm.length != 0) {
         this.searchTerm = ""
       }
     }
