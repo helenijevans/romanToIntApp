@@ -32,6 +32,8 @@ ___
 
 ## To-do List
 - [ ] Feedback from CC
+- [ ] Prevention/Input Validation
+- [x] Feedback from CC
 - [x] Adapt FE to show errors
 - [x] Adapt API to fix
 - Added a check for if the number is greater than the maximum number in the dictionary, allowing for quick multiples to be dealt with before using the rest of the comparative logic
