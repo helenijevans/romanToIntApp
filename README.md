@@ -32,7 +32,8 @@ ___
 
 ## To-do List
 - [ ] Feedback from CC
-- [ ] Prevention/Input Validation
+- [ ] Prevention/Input Backend
+- [x] Prevention/Input Validation Frontend
 - [x] Feedback from CC
 - [x] Adapt FE to show errors
 - [x] Adapt API to fix

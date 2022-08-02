@@ -8,7 +8,7 @@
       <input type="radio" id="two" value="intToRoman" v-model="route" v-on:click="clearInputField" />
       <label for="two">Integer to Numerals</label>
       <div>
-        <input v-model="searchTerm" type="text"
+        <input v-model="searchTerm" :type="this.route === 'romanToInt' ? 'text' : 'number'"
           :placeholder="this.route === 'romanToInt' ? 'Enter a numeral' : 'Enter an integer'" />
         <button class="btn btn-primary" v-on:click="convert"> Convert me</button>
         <h2>{{ result }}</h2>
@@ -27,6 +27,7 @@ export default {
     searchTerm: '',
     result: '',
     route: "romanToInt",
+    // entryRestriction: "number",
   }),
   methods: {
     async convert() {
