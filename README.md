@@ -23,17 +23,29 @@ npm run lint
 
 ___
 ## Current State of Project
+### 🔃 Conversion Rom-Int
 ![Shows image converting roman numeral to integer](./src/assets/frontend_currentProgress2.png)
 
+### 🔃 Conversion Int-Rom
 ![Shows image converting integer to roman numeral](./src/assets/frontend_currentProgress1.png)
 
-![Shows error handling](./src/assets/error-handling.png)
+### ❌ Error Handling | Server Error
+![Shows error handling for server error](./src/assets/error-handling-server-error.png)
+
+### ❌ Error Handling | Integer Error
+![Shows error handling for server error](./src/assets/error-handling-integer.png)
+
+### ❌ Error Handling | Roman Character Error
+![Shows error handling for server error](./src/assets/error-handling-roman.png)
+
 
 
 ## To-do List
 - [ ] Feedback from CC
-- [ ] Prevention/Input Backend
+- [x] Prevention/Input Backend
+- Validation to check if in valid subset of roman characters (ROM-INT), or if the number entered was an integer (INT-ROM) 
 - [x] Prevention/Input Validation Frontend
+- Restricted input to text (ROM-INT) and number (INT-ROM)
 - [x] Feedback from CC
 - [x] Adapt FE to show errors
 - [x] Adapt API to fix

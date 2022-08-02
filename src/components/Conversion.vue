@@ -42,6 +42,7 @@ export default {
     clearInputField() {
       if (this.searchTerm.length != 0) {
         this.searchTerm = ""
+        this.result = ""
       }
     }
   }
